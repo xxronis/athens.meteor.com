@@ -37,9 +37,9 @@
 footer {
   margin-top: 48px;
   border-top: 1px solid @gray-lighter;
-  padding: 120px 0;
-  background: @brand-primary url("/moon.png") center center no-repeat;
-  background-blend-mode: color-burn;
+  padding: 68px 0;
+  background: @brand-primary url("/parthenon.jpg") center center no-repeat;
+  background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -102,5 +102,18 @@ footer {
 .jumbotron {
   h2 {
     margin-top: 0;
+  }
+}
+.homepage-section-sponsors {
+  .row {
+    > div {
+      display: flex;
+      align-items: center;
+      position: static;
+      min-height: 100px;
+      > a {
+        margin: 0 auto;
+      }
+    }
   }
 }
