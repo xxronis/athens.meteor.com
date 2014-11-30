@@ -2,13 +2,15 @@
 @import '../../stylesheets/variables.import.less';
 
 .jumbotron.jumbotron-home {
-  background: @brand-primary url("/parthenon.jpg") center center no-repeat;
+  background: @brand-primary url("/parthenon.jpg") bottom center no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
   color: #fff;
-  padding: 118px 0;
+  padding: 132px 0;
   text-shadow: 1px 2px 4px #212121;
-
+  @media (min-width: @screen-lg-desktop-wide) {
+    padding: 264px 0;
+  }
   .home-logo {
     margin: 0 auto;
     display:none; //tmp crap
